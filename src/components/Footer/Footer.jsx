@@ -4,17 +4,19 @@ import { linksArray } from "./linksArray"
 
 const Footer = () => {
   return (
-    <footer className="footer" style={{marginTop: "100px"}}>
+    <footer className="footer">
         <div className="link-grid">
             {linksArray.map(({title, links}, i)=>{
-                return <div className="link-section" key={i}>
-                <h6 className="title">{title}</h6>
-                <div className="links">
-                    {links.map((link, j) => {
-                        return <a href="" className="link" key={j}>{link}</a>
-                    })}
-                </div>
-                </div>
+                return <>
+                    <div className="link-section" key={i}>
+                        <h6 className="title">{title}</h6>
+                        <div className="links">
+                            {links.map((link, j) => {
+                                return <a href="" className="link" key={j}>{link}</a>
+                            })}
+                        </div>
+                    </div>
+                </>
             })}
         </div>
         <div className="platform-grid">
