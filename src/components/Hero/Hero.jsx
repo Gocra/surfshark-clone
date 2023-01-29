@@ -1,7 +1,4 @@
 import "./Hero.css"
-import heroBGImgXs from "../../assets/winter-deal-bg-xs.svg"
-import heroBGImg from "../../assets/winter-deal-bg.svg"
-import heroImg from "../../assets/winter-deal-punk.svg"
 
 const Hero = () => {
   return (
