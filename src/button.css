@@ -1,0 +1,29 @@
+.btn{
+    color: white;
+    background-color: var(--clr-red-1);
+    cursor: pointer;
+    border-radius: 8px;
+    font-weight: 700;
+    letter-spacing: -.1px;
+    line-height: 1.14;
+    border: none;
+    text-decoration: none;
+}
+
+.btn-md{
+    padding: 15px 16px;
+    font-size: 16px;
+}
+
+.btn-sm{
+    padding: 12px;
+    font-size: 14px;
+}
+
+.btn-light:hover{
+    background-color: var(--clr-red-2);
+}
+
+.btn-dark:hover{
+    background-color: var(--clr-red-3);
+}

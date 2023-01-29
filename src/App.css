@@ -1,0 +1,36 @@
+*, *::before, *::after{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: SurfsharkFont;
+  src: url(./assets/surfsharkcircularweb-regular.woff2);
+}
+
+@font-face {
+  font-family: SurfsharkFont;
+  src: url(./assets/surfsharkcircularweb-bold.woff2);
+  font-weight: bold;
+}
+
+body{
+  background: #222e3a;
+  text-rendering: optimizeLegibility;
+  font-family: SurfsharkFont, sans-serif;
+  line-height: 1.5;
+}
+
+:root{
+  --clr-red-1: #FF4C64;
+  --clr-red-2: #fe7085;
+  --clr-red-3: #e94a60;
+  --clr-blue: #11b4b7;
+  --clr-blue-dark: #222e3a;
+  --clr-transparent: rgba(255,255,255,.0509804);
+  --clr-muted-1: rgba(255,255,255,.1);
+  --clr-muted: rgba(255,255,255,.5);
+
+  --navbar-height: 64px;
+}
