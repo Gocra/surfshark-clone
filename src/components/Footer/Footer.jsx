@@ -7,7 +7,7 @@ const Footer = () => {
     <footer className="footer">
         <div className="link-grid">
             {linksArray.map(({title, links}, i)=>{
-                return <>
+                return (
                     <div className="link-section" key={i}>
                         <h6 className="title">{title}</h6>
                         <div className="links">
@@ -16,7 +16,7 @@ const Footer = () => {
                             })}
                         </div>
                     </div>
-                </>
+                )
             })}
         </div>
         <div className="platform-grid">

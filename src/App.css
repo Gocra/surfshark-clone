@@ -2,6 +2,8 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  color: #222e3a;
 }
 
 @font-face {
@@ -32,6 +34,7 @@ body{
   --clr-transparent: rgba(255,255,255,.0509804);
   --clr-muted-1: rgba(255,255,255,.1);
   --clr-muted: rgba(255,255,255,.5);
+  --clr-muted-black: rgba(34,46,58,.75);
 
   --navbar-height: 64px;
 }
