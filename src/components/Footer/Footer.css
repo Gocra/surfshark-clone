@@ -70,6 +70,7 @@
     border-radius: 8px;
     -webkit-transition: all .3s ease;
     transition: all .3s ease;
+    text-decoration: none;
 }
 
 .footer .platform-grid .platform:hover{

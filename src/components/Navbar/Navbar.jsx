@@ -2,22 +2,43 @@ import "./Navbar.css";
 import logo from "../../assets/logo.svg";
 import hamburgerSVG from "../../assets/hamburger.svg";
 import langSVG from "../../assets/lang.svg";
-import searchSVG from "../../assets/search.svg";
+import {ReactComponent as SearchSVG} from "../../assets/search.svg";
+import {ReactComponent as UserSVG} from "../../assets/user.svg";
+import {ReactComponent as CaretSVG} from "../../assets/caret.svg";
 
 const Navbar = () => {
   return (
     <nav className="navbar">
         <div className="content">
-          <a href="" className="logo-container"><img src={logo} alt="Surfshark Logo" /></a>
+          <a href="#" className="logo-container"><img src={logo} alt="Surfshark Logo" /></a>
+          <ul className="links">
+            <li className="link"><a href="#">Surfshark One</a></li>
+            <li className="link">
+              <span>Products</span>
+              <CaretSVG className="caret-icon"/>
+            </li>
+            <li className="link"><a href="#">Pricing</a></li>
+            <li className="link"><a href="#">Download</a></li>
+            <li className="link">
+              <span>Resources</span>
+              <CaretSVG className="caret-icon"/>
+            </li>
+          </ul>
           <div className="user">
             <button className="search">
-              <img src={searchSVG} alt="" />
+              <SearchSVG className="search-icon" />
+              <span>Search</span>
             </button>
             <button className="change-lang">
-              <img src={langSVG} alt="" />
+              <img className="lang-icon" src={langSVG} alt="" />
+              <span>English</span>
+              <CaretSVG className="caret-icon"/>
             </button>
-            <a href="" className="login">Log in</a>
-            <a href="" className="btn btn-sm btn-dark get-surfshark">Get Surfshark</a>
+            <a href="#" className="login">
+              <span>Log in</span>
+              <UserSVG className="user-icon" />
+            </a>
+            <a href="#" className="btn btn-sm btn-dark get-surfshark">Get Surfshark</a>
             <button className="hamburger">
               <img src={hamburgerSVG} alt="" />
             </button>

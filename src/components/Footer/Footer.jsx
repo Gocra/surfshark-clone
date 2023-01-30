@@ -12,7 +12,7 @@ const Footer = () => {
                         <h6 className="title">{title}</h6>
                         <div className="links">
                             {links.map((link, j) => {
-                                return <a href="" className="link" key={j}>{link}</a>
+                                return <a href="#" className="link" key={j}>{link}</a>
                             })}
                         </div>
                     </div>
@@ -21,7 +21,7 @@ const Footer = () => {
         </div>
         <div className="platform-grid">
             {platformArray.map(({logo, name}, i) => {
-                return <a href="" className="platform" key={i}>
+                return <a href="#" className="platform" key={i}>
                     <img src={logo} alt="" className="logo" />
                     <span className="name">{name}</span>
                 </a>
