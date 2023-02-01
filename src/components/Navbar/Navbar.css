@@ -33,7 +33,7 @@
     align-items: center;
 }
 
-.navbar .content .links .link{
+.navbar .content .links .nav-link{
     font-weight: 450;
     font-size: 12px;
     /* line-height: 133%; */
@@ -54,13 +54,13 @@
     margin-right: 16px;
 }
 
-.navbar .content .links .link span{
+.navbar .content .links .nav-link span{
     letter-spacing: .5px;
 }
 
-.navbar .content .links .link a,
-.navbar .content .links .link span,
-.navbar .content .links .link svg path{
+.navbar .content .links .nav-link a,
+.navbar .content .links .nav-link span,
+.navbar .content .links .nav-link svg path{
     list-style: none;
     text-decoration: none;
     color: var(--clr-blue-dark);

@@ -12,14 +12,14 @@ const Navbar = () => {
         <div className="content">
           <a href="#" className="logo-container"><img src={logo} alt="Surfshark Logo" /></a>
           <ul className="links">
-            <li className="link"><a href="#">Surfshark One</a></li>
-            <li className="link">
+            <li className="nav-link"><a href="#">Surfshark One</a></li>
+            <li className="nav-link">
               <span>Products</span>
               <CaretSVG className="caret-icon"/>
             </li>
-            <li className="link"><a href="#">Pricing</a></li>
-            <li className="link"><a href="#">Download</a></li>
-            <li className="link">
+            <li className="nav-link"><a href="#">Pricing</a></li>
+            <li className="nav-link"><a href="#">Download</a></li>
+            <li className="nav-link">
               <span>Resources</span>
               <CaretSVG className="caret-icon"/>
             </li>
