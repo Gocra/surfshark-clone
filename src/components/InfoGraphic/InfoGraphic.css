@@ -1,0 +1,45 @@
+.infographic{
+    margin: 0 16px;
+    background-color: white;
+    border-radius: 16px;
+    padding: 48px 24px;
+
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    text-align: center;
+    min-width: 367px;
+
+}
+
+.infographic .image{
+    width: 164px;
+    height: 164px;
+    margin: auto;
+    margin-bottom: 32px;
+}
+
+.infographic .title{
+    font-size: 24px;
+    line-height: 1.17;
+    letter-spacing: -.5px;
+    margin-bottom: 16px;
+}
+
+.infographic .text{
+    font-size: 18px;
+    line-height: 1.44;
+    letter-spacing: -.2px;
+    color: var(--clr-muted-black);
+    text-align: center;
+}
+
+.infographic .link{
+    margin: 16px auto 0;
+}

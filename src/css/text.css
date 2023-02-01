@@ -1,0 +1,19 @@
+.highlighted-text{
+    background-color: rgba(255,255,255,.1);
+    border-radius: 32px;
+    display: inline-block;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1.17;
+    letter-spacing: -.5px;
+    padding: 8px 24px;
+    color: #fff;
+    text-align: center;
+}
+
+.emphasised-text{
+    background: linear-gradient(256.7deg,#1f3c6a 0,#1bb4b7 100%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
