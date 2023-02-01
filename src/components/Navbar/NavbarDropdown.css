@@ -1,0 +1,114 @@
+.navbar-dropdown{
+    position: absolute;
+    top: 100%;
+    background-color: white;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    padding-bottom: 32px;
+    opacity: 0;
+    transition: opacity 500ms ease;
+    pointer-events: none;
+}
+
+.navbar-dropdown.show{
+    opacity: 1;
+    pointer-events: all;
+}
+
+.navbar-dropdown .content{
+    /* padding: 0 16px; */
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar-dropdown .content .dropdown-row{
+    width: 100%;
+}
+
+.navbar-dropdown .content .dropdown-row .row-title{
+    font-weight: 700;
+    font-size: .625rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: rgba(34,46,58,.25);
+    padding-bottom: 8px;
+    line-height: 1;
+    border-bottom: 1px solid rgba(34,46,58,.1);
+    margin: 32px 0 16px;
+    text-align: left;
+}
+.navbar-dropdown .content .dropdown-row .row-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 32px;
+}
+
+.navbar-dropdown .content .dropdown-row .row-grid .row-section .heading{
+    padding: 1rem;
+    border-radius: 8px;
+    /* width: 100%; */
+    display: block;
+    text-decoration: none;
+    transition: 300ms ease all;
+}
+
+.navbar-dropdown .content .dropdown-row .row-grid .row-section .heading:hover{
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.navbar-dropdown .content .dropdown-row .row-grid .row-section .heading .section-title{
+    display: flex;
+    align-items: center;
+    transition: ease all .5s;
+    font-weight: 700;
+    font-size: .875rem;
+    line-height: 171%;
+    letter-spacing: .1px;
+}
+
+.navbar-dropdown .content .dropdown-row .row-grid .row-section .heading .section-title .icon{
+    margin-left: 6px;
+    margin-bottom: 2px;
+    transform: rotateZ(-90deg);
+}
+
+.navbar-dropdown .content .dropdown-row .row-grid .row-section .heading .section-title .icon path{
+    fill: rgba(34,46,58,.25);
+}
+.navbar-dropdown .content .dropdown-row .row-grid .row-section .heading .info{
+    display: block;
+    font-weight: 400;
+    font-size: .75rem;
+    line-height: 158%;
+    letter-spacing: .5px;
+    text-align: left;
+    color: rgba(34,46,58,.75);
+}
+
+.navbar-dropdown .content .dropdown-row .row-grid .row-section .links{
+    display: flex;
+    flex-direction: column;
+    margin: 16px 0 8px;
+    padding: 0 1rem;
+}
+.navbar-dropdown .content .dropdown-row .row-grid .row-section .links .nav-dropdown-link{
+    font-weight: 450;
+    font-size: .75rem;
+    line-height: 1.33;
+    letter-spacing: .5px;
+    color: rgba(34,46,58,.75);
+    -webkit-transition: ease all .7s;
+    transition: ease all .7s;
+    display: block;
+    /* margin-right: auto; */
+    text-decoration: none;
+    width: 100%;
+    text-align: left;
+}
+
+.navbar-dropdown .content .dropdown-row .row-grid .row-section .links .nav-dropdown-link:not(:last-child) {
+    margin-bottom: 16px;
+}

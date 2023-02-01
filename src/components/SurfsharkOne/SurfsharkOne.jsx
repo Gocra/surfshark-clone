@@ -163,7 +163,7 @@ const OnePlanC2A = () => {
                                     </div>
                                     {benefits.map((benefit, j) => {
                                         return (
-                                            <div className="benefit-item">
+                                            <div className="benefit-item" key={j}>
                                                 <img className="tick-icon" src={tickIconSVG} alt="" />
                                                 <span>{benefit}</span>
                                             </div>

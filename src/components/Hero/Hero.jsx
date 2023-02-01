@@ -5,6 +5,7 @@ import InfoGraphic from "../InfoGraphic/InfoGraphic";
 import PCMAGLogoSVG from "../../assets/logo-pcmag.svg"
 import {ReactComponent as ChevronSVG} from "../../assets/chevron.svg";
 import InfoCard from "../InfoCard/InfoCard";
+import { planDetails } from "./planDetails";
 
 const HeroLanding = () => {
   return (
@@ -34,15 +35,6 @@ const About = () => {
   )
 }
 
-const planDetails = [
-  {detail: "Unlimited devices"},
-  {detail: "No Logs Policy"},
-  {detail: "All advanced security features"},
-  {detail: "High-speed content delivery"},
-  {detail: "30-day money-back guarantee"},
-  {detail: "24/7 customer support"},
-]
-
 const plansInfoCardData = {
   duration:"24 months",
   currency:"GBP",
@@ -59,8 +51,13 @@ const Plans = () => {
       <div className="details">
         <h2 className="title">Plan includes:</h2>
         <div className="plan-detail-grid">
-          {planDetails.map(({detail}, i) => {
-            return <div className="detail" key={i}><p className="text">{detail}</p></div>
+          {planDetails.map(({detail, icon}, i) => {
+            return <div className="detail" key={i}>
+              <div className="icon-container">
+                <img src={icon} className="icon" alt="" />
+              </div>
+              <p className="text">{detail}</p>
+              </div>
           })}
         </div>
       </div>
