@@ -54,6 +54,12 @@
     color: white;
 }
 
+@media screen and (max-width: 1100px){
+    .hero .top .text-container .hero-text .title {
+        font-size: 56px;
+    }
+}
+
 .hero .top .phone-image{
     top: -64px;
     left: calc(50% + 32px);
@@ -64,6 +70,37 @@
     width: 740px;
     height: 649px;
     aspect-ratio: auto 740 / 649;
+}
+
+@media (min-width: 768px) and (max-width: 1100px){
+    .hero .top .phone-image {
+        width: 670px;
+        height: 578px;
+        left: calc(50% - 120px);
+    }
+}
+
+@media (max-width: 767px){
+    .hero .top .phone-image {
+        position: static;
+        width: 100%;
+        margin-bottom: 40px;
+    }
+    .hero .top .text-container {
+        grid-template-columns: 1fr;
+    }
+    .hero .top .text-container .hero-text {
+        margin-top: 40px;
+    }
+    .hero .top .text-container .hero-text .deal {
+        margin-bottom: 8px;
+        font-size: 16px;
+    }
+    .hero .top .text-container .hero-text .btn-light{
+        display: block;
+        width: 100%;
+    }
+    
 }
 
 .hero .about{
@@ -93,6 +130,7 @@
     align-items: center;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    padding: 1rem;
 }
 
 .hero .plans .details .title{
@@ -108,6 +146,26 @@
     grid-template-columns: 1fr 1fr;
     gap: 32px;
     padding: 0 16px;
+}
+
+@media (max-width: 1023px){
+    .hero .plans .details .plan-detail-grid {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+}
+
+@media (max-width: 767px){
+    .hero .plans {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 40px;
+    }
+        
+    .hero .plans .details .title{
+        text-align: center;
+    }
+
 }
 
 .hero .plans .details .plan-detail-grid .detail{
@@ -184,6 +242,14 @@
     margin-left: 16px;
     margin-right: 16px;
     text-align: center;
+}
+
+@media (max-width: 767px){
+    .hero .quote-slider .quote{
+        font-size: 24px;
+        line-height: 1.17;
+        letter-spacing: -1px;
+    }
 }
 
 .hero .quote-slider .slider-controls{

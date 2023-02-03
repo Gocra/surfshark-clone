@@ -112,3 +112,34 @@
 .navbar-dropdown .content .dropdown-row .row-grid .row-section .links .nav-dropdown-link:not(:last-child) {
     margin-bottom: 16px;
 }
+
+@media (max-width: 991px){
+    .navbar-dropdown.products{
+        top: 192px;
+    }
+    .navbar-dropdown.resources{
+        top: 384px;
+    }
+
+    .navbar-dropdown .content .dropdown-row .row-title{
+        margin-top: 1rem;
+    }
+    .navbar-dropdown .content .dropdown-row .row-grid .row-section .heading .info,
+    .navbar-dropdown .content .dropdown-row .row-grid .row-section .heading .section-title .icon{
+        display: none;
+    }
+    .navbar-dropdown .content .dropdown-row .row-grid{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .navbar-dropdown .content .dropdown-row .row-grid .row-section .heading{
+        display: flex;
+        align-items: center;
+        padding: 1rem 0;
+    }
+
+    .navbar-dropdown .content .dropdown-row .row-grid .row-section .heading img{
+        margin-right: 8px;
+    }
+}

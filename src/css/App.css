@@ -23,6 +23,12 @@ body{
   background-color: var(--clr-blue-dark);
 }
 
+@media (max-width: 767px){
+  .heading{
+    text-align: center;
+  }
+}
+
 :root{
   --clr-red-1: #FF4C64;
   --clr-red-2: #fe7085;

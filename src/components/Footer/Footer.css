@@ -116,16 +116,18 @@
 
 @media (max-width: 1200px){
     .footer .link-grid{
-        grid-template-columns: repeat(4, minmax(0, 1fr));
+        grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 }
 
 @media (max-width: 767px){
-    /* .footer .link-grid{
-        grid-template-columns: repeat(3, minmax(0, 1fr));
-    } */
-    /* SHOW DROPDOWN FOR LINK GRID */
-    .footer .platform-grid{
-        grid-template-columns: repeat(3, minmax(0, 1fr));
+    .footer .link-grid{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media (max-width: 532px){
+    .footer .link-grid{
+        grid-template-columns: 1fr 1fr;
     }
 }

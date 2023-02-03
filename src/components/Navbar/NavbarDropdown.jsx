@@ -1,9 +1,9 @@
 import "./NavbarDropdown.css"
 import { ReactComponent as ChevronSVG } from "../../assets/chevron.svg";
 
-const NavbarDropdown = ({dropdownData, show}) => {
+const NavbarDropdown = ({cls, dropdownData, show}) => {
 
-    const cName = show ? "navbar-dropdown show" : "navbar-dropdown"
+    const cName = show ? `navbar-dropdown show ${cls}` : `navbar-dropdown ${cls}`
 
   return (
     <div className={cName}>

@@ -10,11 +10,14 @@
     translate: 100% 0;
     opacity: 0;
     z-index: 999999999;
+    pointer-events: none;
 }
 
 .language-popout.show{
     translate: 0;
     opacity: 1;
+    pointer-events: all;
+
 }
 
 .language-popout .heading{
@@ -49,4 +52,16 @@
     text-decoration: none;
     width: 100%;
     display: inline-block;
+}
+
+@media (max-width: 991px){
+    .language-popout{
+        width: 100%;
+        position: absolute;
+        left: 0;
+        right: 0;
+        border-top-left-radius: 12px;
+        border-top-right-radius: 12px;
+        translate: 0 100%;
+    }   
 }

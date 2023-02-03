@@ -63,6 +63,19 @@
     padding-bottom: 318px;
 }
 
+@media (max-width: 767px){
+    .surfsharkone .one-vpn{
+        padding-bottom: 32px;
+    }
+    .surfsharkone .one-vpn .content{
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+    }
+  }
+
 .surfsharkone .one-vpn .content{
     flex-basis: 41.66667%;
     max-width: 41.66667%;
@@ -98,6 +111,12 @@
     max-width: 72%;
 }
 
+@media (max-width: 767px){
+    .surfsharkone .vpn-img{
+        display: none;
+    }
+  }
+
 .surfsharkone .antivirus{
     position: relative;
     color: #fff;
@@ -117,6 +136,24 @@
 .surfsharkone .antivirus img{
     padding-left: 0;
 }
+
+@media (max-width: 767px){
+    .surfsharkone .antivirus{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .surfsharkone .antivirus img{
+        display: none;
+    }
+    .surfsharkone .antivirus .content{
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        max-width: unset;
+    }
+  }
 
 .surfsharkone .antivirus .content .antivirus-logo{
     margin-bottom: 32px;
@@ -180,6 +217,12 @@
     display: block;
 }
 
+@media (max-width: 767px){
+    .surfsharkone .search img{
+        display: none;
+    }
+  }
+
 .surfsharkone .one-alert{
     position: relative;
 }
@@ -209,6 +252,35 @@
     max-width: 100%;
     height: auto;
 }
+
+@media (max-width: 767px){
+    .surfsharkone .one-alert .content .wrapper{
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        padding: 32px 0 0;
+    }
+    .surfsharkone .one-alert img{
+        display: none;
+    }
+    .surfsharkone .one-alert .content .flex{
+        max-width: unset;
+    }
+    
+    .surfsharkone .one-alert .content .wrapper .logo{
+        margin: auto;
+        margin-bottom: 32px;
+        display: block;
+        max-width: fit-content;
+    }
+
+    .surfsharkone .one-alert .content .wrapper .link{
+        margin: auto;
+        max-width: fit-content;
+    }
+  }
 
 .surfsharkone .one-alert .content .wrapper .heading{
     margin-bottom: 32px;
@@ -319,4 +391,35 @@
 
 .surfsharkone .one-plan-c2a .info-card{
     margin: auto;
+}
+
+@media (max-width: 1023px){
+    .surfsharkone .one-plan-c2a .content .benefits .benefits-grid {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+}
+
+@media (max-width: 767px){
+    .surfsharkone .one-plan-c2a .content {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 40px;
+    }
+
+    .surfsharkone .one-plan-c2a .content .benefits{
+        width: 100%;
+        max-width: unset;
+    }
+        
+    .surfsharkone .one-plan-c2a .content .benefits .benefits-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+        width: 100%;
+    }
+
+    .surfsharkone .one-plan-c2a .content .benefits .benefits-grid .benefit {
+        align-items: center;
+    }
+
 }

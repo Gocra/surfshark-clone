@@ -218,6 +218,40 @@
 
 @media (max-width: 991px){
     .navbar .content .links{
-        display: none;
+        position: absolute;
+        top: 100%;
+        height: calc(100vh - 64px);
+        width: 100vw;
+        left: 0;
+        background-color: white;
+        flex-direction: column;
+        opacity: 0;
+        pointer-events: none;
+    }
+    .navbar .content .links.show{
+        transition: opacity 300ms ease;
+        opacity: 1;
+        pointer-events: all;
+    }
+
+    .navbar .content .links .nav-link{
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 171%;
+        letter-spacing: .1px;
+        padding: 20px 16px;
+        position: relative;
+        border-radius: 8px 8px 0 0;
+        -webkit-transition: ease all .5s;
+        transition: ease all .5s;
+        width: 100%;
+        justify-content: space-between;
+    }
+    .navbar .content .links .nav-link svg{
+        width: 24px;
+        height: 24px;
+    }
+    .nav-link.move{
+        margin-top: 462px;
     }
 }

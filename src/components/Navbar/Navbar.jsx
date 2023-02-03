@@ -25,6 +25,11 @@ const Navbar = () => {
   const languagePopoutBtnRef = useRef()
   const [showLanguagePopout, setShowLanguageshowLanguagePopout] = useState(false)
 
+  const [isHamburgerMenuOpen, setIsHamburgerMenuOpen] = useState(false)
+
+  const hamburgerMenuClass = isHamburgerMenuOpen ? "links show" : "links"
+  const pricingClass = showProductsDropdown ? "nav-link move" : "nav-link"
+
   useEffect(() => {
     function handleClickOutside(event) {
       if(languagePopoutBtnRef.current && languagePopoutBtnRef.current.contains(event.target)){
@@ -83,10 +88,10 @@ const Navbar = () => {
   return (
     <nav className="navbar">
         <div ref={productsDropdownRef}>
-              <NavbarDropdown show={showProductsDropdown} dropdownData={productsDropdownData} />
+              <NavbarDropdown cls="products" show={showProductsDropdown} dropdownData={productsDropdownData} />
         </div>
         <div ref={resourcesDropdownRef}>
-              <NavbarDropdown show={showResourcesDropdown} dropdownData={resourcesDropdownData} />
+              <NavbarDropdown cls="resources" show={showResourcesDropdown} dropdownData={resourcesDropdownData} />
         </div>
         {/* <div > */}
             <LanguagePopout r={languagePopoutRef} show={showLanguagePopout} />
@@ -94,13 +99,13 @@ const Navbar = () => {
         <div className="wrapper">
           <div className="content">
             <a href="#" className="logo-container"><img src={logo} alt="Surfshark Logo" /></a>
-            <ul className="links">
+            <ul className={hamburgerMenuClass}>
               <li className="nav-link"><a href="#">Surfshark One</a></li>
               <li className="nav-link" ref={productsDropdownBtnRef}>
                 <span>Products</span>
                 <CaretSVG className="caret-icon"/>
               </li>
-              <li className="nav-link"><a href="#">Pricing</a></li>
+              <li className={pricingClass}><a href="#">Pricing</a></li>
               <li className="nav-link"><a href="#">Download</a></li>
               <li className="nav-link" ref={resourcesDropdownBtnRef}>
                 <span>Resources</span>
@@ -122,7 +127,9 @@ const Navbar = () => {
                 <UserSVG className="user-icon" />
               </a>
               <a href="#" className="btn btn-sm btn-dark get-surfshark">Get Surfshark</a>
-              <button className="hamburger">
+              <button className="hamburger" onClick={()=>{
+                setIsHamburgerMenuOpen(prev => !prev)
+              }}>
                 <img src={hamburgerSVG} alt="" />
               </button>
             </div>
