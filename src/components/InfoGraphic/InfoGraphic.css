@@ -43,3 +43,14 @@
 .infographic .link{
     margin: 16px auto 0;
 }
+
+@media (max-width: 767px){
+    .hero .about .infographic-grid {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .hero .about .infographic-grid .infographic {
+        max-width: 100%;
+        min-width: unset;
+    }
+}

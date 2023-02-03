@@ -1,8 +1,6 @@
 .surfsharkone{
     padding-top: 96px;
     background-color: white;
-    /* position: relative; */
-    /* padding-bottom: 318px; */
 }
 
 .surfsharkone .title{
@@ -114,6 +112,9 @@
 @media (max-width: 767px){
     .surfsharkone .vpn-img{
         display: none;
+    }
+    .surfsharkone .title{
+        font-size: 4rem;
     }
   }
 
@@ -413,7 +414,7 @@
     }
         
     .surfsharkone .one-plan-c2a .content .benefits .benefits-grid {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
         gap: 1rem;
         width: 100%;
     }
